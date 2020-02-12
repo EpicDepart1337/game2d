@@ -83,7 +83,11 @@ void gf2d_sprite_free(Sprite *sprite);
  */
 void gf2d_sprite_clear_all();
 
-
-
+/**
+*@brief states if the sprite manager exists or not
+* the exists variable is in the sprite manager declaration in gf2d_sprite.c
+*1 is true 0 is false
+*/
+Uint32 gf2d_sprite_manager_exists();
 
 #endif

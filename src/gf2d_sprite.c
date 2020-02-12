@@ -12,6 +12,7 @@ typedef struct
 {
     Uint32 max_sprites;
     Sprite * sprite_list;
+	Uint32 exists;
 }SpriteManager;
 
 static SpriteManager sprite_manager;
@@ -25,7 +26,14 @@ void gf2d_sprite_close()
     }
     sprite_manager.sprite_list = NULL;
     sprite_manager.max_sprites = 0;
+	sprite_manager.exists = false;
     slog("sprite system closed");
+}
+
+Uint32 gf2d_sprite_manager_exists(){
+
+	return sprite_manager.exists;
+
 }
 
 void gf2d_sprite_init(Uint32 max)
@@ -43,6 +51,7 @@ void gf2d_sprite_init(Uint32 max)
         slog("failed to init image: %s",SDL_GetError());
     }
     slog("sprite system initialized");
+	sprite_manager.exists = true;
     atexit(IMG_Quit);
     atexit(gf2d_sprite_close);
 }

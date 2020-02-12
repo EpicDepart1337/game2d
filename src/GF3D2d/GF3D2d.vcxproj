@@ -100,6 +100,7 @@
     <ClCompile Include="..\gf2d_draw.c" />
     <ClCompile Include="..\gf2d_graphics.c" />
     <ClCompile Include="..\gf2d_sprite.c" />
+    <ClCompile Include="user_interface.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gfc\simple_json\include\simple_json.h" />
@@ -114,6 +115,7 @@
     <ClInclude Include="..\..\include\gf2d_draw.h" />
     <ClInclude Include="..\..\include\gf2d_graphics.h" />
     <ClInclude Include="..\..\include\gf2d_sprite.h" />
+    <ClInclude Include="user_interface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

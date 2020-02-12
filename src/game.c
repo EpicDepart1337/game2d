@@ -2,6 +2,7 @@
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
 #include "simple_logger.h"
+#include "user_interface.h"
 
 int main(int argc, char* argv[])
 {
@@ -33,6 +34,7 @@ int main(int argc, char* argv[])
     /*demo setup*/
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png", 32, 32, 16);
+	user_interface_menu_initialize();
     /*main game loop*/
     while (!done)
     {
@@ -48,6 +50,7 @@ int main(int argc, char* argv[])
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
         gf2d_sprite_draw_image(sprite, vector2d(0, 0));
+		user_interface_menu_open();
 
         //UI elements last
         gf2d_sprite_draw(
