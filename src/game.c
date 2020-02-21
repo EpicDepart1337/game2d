@@ -1,22 +1,24 @@
 #include <SDL.h>
+#include <SDL_ttf.h>
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
 #include "simple_logger.h"
 #include "user_interface.h"
-
+#include "gfc_input.h"
 int main(int argc, char* argv[])
 {
     /*variable declarations*/
     int done = 0;
     const Uint8* keys;
     Sprite* sprite;
-
-    int mx, my;
+	int mx, my;
     float mf = 0;
     Sprite* mouse;
     Vector4D mouseColor = { 255,100,255,200 };
-
-    /*program initializtion*/
+	//msyi.ttf
+	const char * text = "LOL";
+	
+	
     init_logger("gf2d.log");
     slog("---==== BEGIN ====---");
     gf2d_graphics_initialize(
@@ -29,12 +31,15 @@ int main(int argc, char* argv[])
         0);
     gf2d_graphics_set_frame_delay(16);
     gf2d_sprite_init(1024);
+	gfc_input_init("config.txt");
     SDL_ShowCursor(SDL_DISABLE);
 
+	user_interface_display_text(text);
     /*demo setup*/
     sprite = gf2d_sprite_load_image("images/backgrounds/bg_flat.png");
     mouse = gf2d_sprite_load_all("images/pointer.png", 32, 32, 16);
 	user_interface_menu_initialize();
+	user_interface_set_text(text);
     /*main game loop*/
     while (!done)
     {
@@ -50,9 +55,16 @@ int main(int argc, char* argv[])
         // all drawing should happen betweem clear_screen and next_frame
             //backgrounds drawn first
         gf2d_sprite_draw_image(sprite, vector2d(0, 0));
-		user_interface_menu_open();
+		if (gfc_input_key_down("m"))
+			user_interface_menu_toggle();
 
+		
+		user_interface_menu_open();
+		user_interface_display_text();
         //UI elements last
+		
+		 
+
         gf2d_sprite_draw(
             mouse,
             vector2d(mx, my),

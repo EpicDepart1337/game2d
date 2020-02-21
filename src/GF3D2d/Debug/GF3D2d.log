@@ -1,27 +1,9 @@
-﻿Build started 2/12/2020 10:41:07 AM.
+﻿Build started 2/21/2020 12:14:36 PM.
      1>Project "D:\VulkanSDK\gameframework2d\src\GF3D2d\GF3D2d.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\gf2d_sprite.c user_interface.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt user_interface.c
          user_interface.c
-     1>d:\vulkansdk\gameframework2d\src\gf3d2d\user_interface.c(11): warning C4550: expression evaluates to a function which is missing an argument list
-         gf2d_sprite.c
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(56): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(78): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(88): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(97): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(113): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(192): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(195) : see declaration of 'strncpy'
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(242): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(243): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(244): warning C4244: '*=' : conversion from 'float' to 'int', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(255): warning C4244: 'function' : conversion from 'float' to 'Uint8', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(256): warning C4244: 'function' : conversion from 'float' to 'Uint8', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(257): warning C4244: 'function' : conversion from 'float' to 'Uint8', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(260): warning C4244: 'function' : conversion from 'float' to 'Uint8', possible loss of data
-     1>d:\vulkansdk\gameframework2d\src\gf2d_sprite.c(275): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VulkanSDK\gameframework2d\GF3D2d.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_mixer.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VulkanSDK\gameframework2d\GF3D2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VulkanSDK\gameframework2d\GF3D2d.lib" /MACHINE:X86 Debug\simple_json.obj
          Debug\simple_json_array.obj
@@ -49,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:00.50
