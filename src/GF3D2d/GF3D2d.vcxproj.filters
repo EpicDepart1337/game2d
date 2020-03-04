@@ -78,6 +78,9 @@
     <ClCompile Include="user_interface.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="player_unit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\gf2d_draw.h">
@@ -117,6 +120,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="user_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player_unit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="level_transfer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
